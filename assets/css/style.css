@@ -1,0 +1,248 @@
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.dev {
+  color: #0cc0df;
+}
+
+/*===========*/
+/* Menu Home */
+/*===========*/
+#home {
+  padding: 150px 0;
+}
+#home .pembuka {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
+}
+.home .img-fluid {
+  top: 0px;
+}
+
+.home .home2 h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.home .home2 .nama {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.home .home2 p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #000000;
+}
+
+.home .home2 {
+  margin-top: 50px;
+}
+
+h4 .bi {
+  color: #000000;
+  letter-spacing: 20px;
+}
+
+h4 .bi:hover {
+  color: #0cc0df;
+  transition: all 0.3s;
+}
+
+.home {
+  margin-top: 55px;
+}
+
+.home .foto {
+  height: 100%;
+  width: 60%;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.home .foto:hover {
+  width: 70%;
+  transform: scale(1);
+  box-shadow: 15px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.cv {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #0cc0df;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 0px 0 15px 0;
+  font-weight: bold;
+}
+
+.cv:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.custom-hr {
+  width: 25%;
+  border: 2px solid #FFFFFF;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+
+/* Menu About */
+
+#about .img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+#about .about {
+  margin-top: 50px;
+}
+
+#about {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+}
+
+#about .card-group {
+  padding-top: 40px;
+}
+
+#about .skill h3 {
+  text-decoration: underline;
+}
+
+#about .card {
+  margin-top: 40px;
+}
+
+#about .card .itadori {
+  height: 243px;
+}
+
+.about .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about .content ul strong {
+  margin-right: 10px;
+}
+
+.about .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #0cc0df;
+  line-height: 0;
+}
+
+#skill h5 {
+  margin-top: 15px;
+}
+
+.progress-bar{
+  background-color: #0cc0df;
+  color: #FFFFFF;
+}
+
+/* Portofolio */
+
+.hr-portofolio {
+  width: 25%;
+  border: 2px solid #000000;
+  margin: 20px auto;
+  border-radius: 50px;
+}
+
+.tombol {
+  background-color: #0cc0df;
+  color: #FFFFFF;
+}
+
+.tombol:hover {
+  transition: all 0.5s;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+  color: #ffffff;
+  background-color: #1a1a1a;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links {
+  margin: 0 0 30px 0;
+}
+
+.footer .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0cc0df;
+  color: #000000;
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: color-mix(in srgb, #0cc0df, transparent 20%);
+  text-decoration: none;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 2px solid color-mix(in srgb, #fafafa, transparent 85%);
+}
+
+.footer .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
