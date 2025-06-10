@@ -1,3 +1,10 @@
+/* FONT POPPINS */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: Poppins, sans-serif;
+}
+
 /* Navbar */
 
 .navbar {
@@ -18,9 +25,11 @@
 #home {
   padding: 150px 0;
 }
+
 #home .pembuka {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.7);
 }
+
 .home .img-fluid {
   top: 0px;
 }
@@ -166,6 +175,156 @@ h4 .bi:hover {
   background-color: #0cc0df;
   color: #FFFFFF;
 }
+
+/* Automatic Sosmed */
+
+.swiper {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+/* Gaya untuk setiap slide (yang berisi logo) */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Gaya untuk gambar logo */
+.swiper-logo {
+    max-height: 60px;
+    width: auto;
+    filter: grayscale(80%) brightness(150%);
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efek saat logo di-hover */
+.swiper-logo:hover {
+    filter: grayscale(0%) brightness(100%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Riwayat Pendidikan */
+.timeline {
+    position: relative;
+    padding-left: 6px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 2px;
+    height: 75%;
+    background-color: white;
+    opacity: 0.5;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #0cc0df;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    margin-left: 30px;
+}
+
+.timeline-duration,
+.timeline-location,
+.timeline-competency {
+    font-size: 0.9em;
+    color: #b0b0c0; 
+}
+
+.timeline-title {
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+/* FOTO ABSTRAK */
+.abstract-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    min-height: 350px;
+}
+
+.abstract-img {
+    position: absolute;
+    object-fit: cover; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.abstract-img-1 {
+    width: 70%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.abstract-img-2 {
+    width: 75%;
+    height: 220px;
+    top: 90px; 
+    left: 50%;
+    right: 0;
+    z-index: 2;
+}
+
+.abstract-img-3 {
+    width: 50%;
+    height: 320px;
+    bottom: 5%;
+    left: 30%;
+    z-index: 3;
+}
+
+/* Penyesuaian untuk tampilan mobile */
+@media (max-width: 767.98px) {
+    .col-md-6 {
+        margin-bottom: 2rem;
+    }
+    .abstract-image-container {
+        min-height: 250px;
+    }
+    .abstract-img-1 {
+        width: 50%;
+        height: 150px;
+        top: 0px;
+        left: 5%;
+    }
+    .abstract-img-2 {
+        width: 55%;
+        height: 160px;
+        top: 60px;
+        right: 10%;
+    }
+    .abstract-img-3 {
+        width: 40%;
+        height: 230px;
+        bottom: 0;
+        left: 25%;
+    }
+}
+
 
 /* Portofolio */
 
