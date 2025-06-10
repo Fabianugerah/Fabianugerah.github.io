@@ -35,7 +35,7 @@
 }
 
 .home .home2 h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 5px;
   color: #000000;
   font-weight: 700;
@@ -315,7 +315,7 @@ h4 .bi:hover {
         width: 55%;
         height: 160px;
         top: 60px;
-        right: 10%;
+        right: 20%;
     }
     .abstract-img-3 {
         width: 40%;
@@ -325,6 +325,26 @@ h4 .bi:hover {
     }
 }
 
+/* Sesuaikan jika ada gambar yang sangat kecil di mobile, agar tidak terlalu ramai */
+@media (max-width: 575.98px) { /* Extra small devices (portrait phones, less than 576px) */
+    .abstract-img-1 {
+        width: 50%;
+        height: 150px;
+        top: 0px;
+        left: 5%;
+    }
+    .abstract-img-2 {
+        width: 50%;
+        height: 150px;
+        top: 60px;
+    }
+    .abstract-img-3 {
+        width: 40%;
+        height: 230px;
+        bottom: 0;
+        left: 25%;
+    }
+}
 
 /* Portofolio */
 
