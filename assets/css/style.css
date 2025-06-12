@@ -5,25 +5,97 @@
   font-family: Poppins, sans-serif;
 }
 
-/* Navbar */
+/* ============================= */
+/* NAVBAR SECTION STYLES         */
+/* ============================= */
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 15px;
   z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.dev {
+.navbar-brand .dev {
   color: #0cc0df;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500; /* Contoh, bisa disesuaikan */
+  transition: color 0.3s ease; /* Transisi untuk warna teks link saat hover atau aktif */
+}
+
+#navbar-logo {
+  transition: opacity 0.3s ease; /* Transisi opacity jika Anda berencana menggunakannya */
+}
+
+/* ================================== */
+/* NAVBAR STATE: TRANSPARENT (INITIAL) */
+/* ================================== */
+/* Kelas ini ditambahkan oleh JavaScript saat halaman pertama kali dimuat atau di bagian paling atas */
+.navbar.navbar-transparent {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.navbar.navbar-transparent .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Pastikan warna teks link dan logo tetap terlihat di latar belakang hero Anda */
+.navbar.navbar-transparent .navbar-nav .nav-link {
+  color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ) !important; /* Teks link tetap putih keabu-abuan saat transparan */
+}
+.navbar.navbar-transparent .navbar-nav .nav-link:hover {
+  color: rgb(
+    0,
+    0,
+    0
+  ) !important; /* Sedikit lebih cerah atau warna yang berbeda saat hover */
+}
+
+.navbar.navbar-transparent .navbar-brand .font {
+  color: #000 !important;
+}
+
+/* ================================= */
+/* NAVBAR STATE: SCROLLED          */
+/* ================================= */
+
+.navbar.navbar-scrolled {
+  background-color: #212529 !important; /* Warna latar belakang */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.navbar-scrolled .navbar-toggler-icon {
+  /* Mengembalikan warna SVG ikon hamburger menjadi putih */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Jika Anda ingin sedikit mengubah warna teks link atau logo saat di-scroll */
+.navbar.navbar-scrolled .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar.navbar-scrolled .navbar-nav .nav-link:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar.navbar-scrolled .navbar-brand .font {
+  color: #fff !important;
 }
 
 /*===========*/
 /* Menu Home */
 /*===========*/
 #home {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 #home .pembuka {
@@ -255,6 +327,30 @@ h4 .bi:hover {
   color: #ffffff;
 }
 
+/* HR Profile */
+.hr-profile {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.hr-profile hr {
+  position: absolute;
+  width: calc(50% - 60px);
+  border-top: 2px solid #ffffff;
+  margin: 0;
+}
+
+.hr-profile .foto-hr {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.hr-profile img {
+  object-fit: cover;
+}
+
 /* FOTO ABSTRAK */
 .abstract-image-container {
   position: relative;
@@ -325,7 +421,6 @@ h4 .bi:hover {
 
 /* Sesuaikan jika ada gambar yang sangat kecil di mobile, agar tidak terlalu ramai */
 @media (max-width: 575.98px) {
-  /* Extra small devices (portrait phones, less than 576px) */
   .abstract-img-1 {
     width: 50%;
     height: 150px;
@@ -362,7 +457,6 @@ h4 .bi:hover {
 
 .skill-card:hover {
   transform: translateY(-7px);
-
 }
 
 .skill-icon {
@@ -401,7 +495,6 @@ h4 .bi:hover {
 
 .icon-uiux {
   background-color: #6a44bf;
-  
 }
 
 .icon-web-design {

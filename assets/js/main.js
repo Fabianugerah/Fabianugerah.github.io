@@ -12,6 +12,7 @@
   window.addEventListener('load', toggleScrolled);
 })();
 
+// Swiper Slider Initialization
 document.addEventListener('DOMContentLoaded', function() {
     const _swiper = new Swiper('.mySwiper', {
         loop: true,
@@ -49,6 +50,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 6,
                 spaceBetween: 40
             }
+        }
+    });
+});
+
+// SCROLL NAVBAR LOGO CHANGE
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.getElementById('navbar');
+    const navbarLogo = document.getElementById('navbar-logo');
+
+    // Dapatkan path logo dari atribut data-
+    const transparentLogoSrc = navbarLogo.getAttribute('data-transparent-logo');
+    const scrolledLogoSrc = navbarLogo.getAttribute('data-scrolled-logo');
+
+    // Set logo awal saat halaman dimuat
+    navbarLogo.src = transparentLogoSrc;
+    navbar.classList.add('navbar-transparent');
+
+    // Menambahkan event listener untuk mendeteksi scroll pada jendela
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const scrollThreshold = 50;
+
+        if (scrollPosition > scrollThreshold) {
+            navbar.classList.remove('navbar-transparent');
+            navbar.classList.add('navbar-scrolled');
+            // Ganti logo ke versi 'scrolled'
+            navbarLogo.src = scrolledLogoSrc;
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+            navbar.classList.add('navbar-transparent');
+            // Ganti logo kembali ke versi 'transparent'
+            navbarLogo.src = transparentLogoSrc;
         }
     });
 });
