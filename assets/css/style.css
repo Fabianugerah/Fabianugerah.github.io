@@ -113,6 +113,12 @@
   font-weight: 700;
 }
 
+.home .home2 h1 .sub_name {
+  color: #0cc0df;
+  font-weight: 500;
+  font-size: 35px;
+}
+
 .home .home2 .nama {
   font-size: 30px;
   font-weight: 700;
@@ -319,7 +325,7 @@ h4 .bi:hover {
 .timeline-duration,
 .timeline-competency {
   font-size: 0.9em;
-  color: #b0b0c0;
+  color: #aaaaaa;
 }
 
 .timeline-title {
@@ -440,8 +446,14 @@ h4 .bi:hover {
   }
 }
 
+/*=========*/
 /* Service */
-.skill-card {
+/*=========*/
+#service {
+  background-color: #000000;
+}
+
+.service-card {
   border: rgb(12, 192, 223) solid 1px;
   border-radius: 10px;
   padding: 30px;
@@ -455,11 +467,11 @@ h4 .bi:hover {
   justify-content: space-between; /* Mendistribusikan ruang di antara item flex */
 }
 
-.skill-card:hover {
+.service-card:hover {
   transform: translateY(-7px);
 }
 
-.skill-icon {
+.service-icon {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -471,14 +483,14 @@ h4 .bi:hover {
   flex-shrink: 0; /* Mencegah ikon menyusut jika konten deskripsi terlalu panjang */
 }
 
-.skill-card h5 {
+.service-card h5 {
   font-weight: 600;
   margin-bottom: 15px;
   color: white;
 }
 
-.skill-card p {
-  color: #9e9e9e;
+.service-card p {
+  color: #aaaaaa;
   font-size: 15px;
   line-height: 1.6;
   flex-grow: 1; /* Memungkinkan paragraf mengisi ruang yang tersedia */
@@ -506,7 +518,7 @@ h4 .bi:hover {
 }
 
 /* Section title styling */
-.section-title {
+.service-title {
   font-size: 35px;
   font-weight: 700;
   color: #ffffff;
@@ -514,11 +526,76 @@ h4 .bi:hover {
   margin-bottom: 30px;
 }
 
-.section-subtitle {
+.service-subtitle {
   font-size: 20px;
   color: #0cc0df;
   font-weight: 500;
   margin-bottom: 5px;
+}
+
+/* SKILL */
+.skills-section {
+  padding: 80px 0;
+}
+
+.skill-card {
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: #0cc0df solid 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-7px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.skill-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.progress {
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.progress-bar {
+  background-color: #0cc0df;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-title .highlight {
+  color: #0cc0df;
+}
+
+.section-description {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  color: #aaaaaa;
 }
 
 /*============*/
