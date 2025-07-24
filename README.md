@@ -15,9 +15,6 @@ A full-stack web platform for renting vehicles and collecting/selling miniature 
 ### 🌡️ Temperature Converter App
 A simple mobile app built with Flutter for converting between Celsius and Fahrenheit — lightweight and beginner-friendly.
 
-### 🎭 Wayang Potehi – Fictional Short Story
-A narrative project about love, memory, and political turmoil, written as a creative exploration of emotion and resistance.
-
 ## 🛠️ Tech Stack
 
 - **Backend**: Laravel, MySQL, JWT, REST API
