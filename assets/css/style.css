@@ -1,8 +1,17 @@
 /* FONT POPPINS */
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+
 * {
   font-family: Poppins, sans-serif;
+}
+
+body {
+  background-color: var(--color-black);
 }
 
 /* ============================= */
@@ -43,25 +52,8 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Pastikan warna teks link dan logo tetap terlihat di latar belakang hero Anda */
-.navbar.navbar-transparent .navbar-nav .nav-link {
-  color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ) !important; /* Teks link tetap putih keabu-abuan saat transparan */
-}
-.navbar.navbar-transparent .navbar-nav .nav-link:hover {
-  color: rgb(
-    0,
-    0,
-    0
-  ) !important; /* Sedikit lebih cerah atau warna yang berbeda saat hover */
-}
-
 .navbar.navbar-transparent .navbar-brand .font {
-  color: #000 !important;
+  color: var(--color-white) !important;
 }
 
 /* ================================= */
@@ -69,8 +61,10 @@
 /* ================================= */
 
 .navbar.navbar-scrolled {
-  background-color: #212529 !important; /* Warna latar belakang */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .navbar.navbar-scrolled .navbar-toggler-icon {
@@ -88,7 +82,7 @@
 }
 
 .navbar.navbar-scrolled .navbar-brand .font {
-  color: #fff !important;
+  color: var(--color-white) !important;
 }
 
 /*===========*/
@@ -109,7 +103,7 @@
 .home .home2 h1 {
   font-size: 50px;
   margin-bottom: 5px;
-  color: #000000;
+  color: var(--color-white);
   font-weight: 700;
 }
 
@@ -126,8 +120,14 @@
 
 .home .home2 p {
   font-size: 20px;
-  font-weight: 400;
-  color: #000000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: rgba(104, 104, 104, 0.5);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
 }
 
 .home .home2 {
@@ -135,7 +135,7 @@
 }
 
 h4 .bi {
-  color: #000000;
+  color: var(--color-white);
   letter-spacing: 20px;
 }
 
@@ -163,8 +163,8 @@ h4 .bi:hover {
 
 .cv {
   font-size: 20px;
-  color: #ffffff;
-  background-color: #0cc0df;
+  color: #0cc0df;
+  border: 2px solid #0cc0df;
   padding: 5px 20px;
   border-radius: 10px;
   margin: 0px 0 15px 0;
@@ -172,14 +172,14 @@ h4 .bi:hover {
 }
 
 .cv:hover {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #0cc0df;
+  color: var(--color-white);
   transition: all 0.3s;
 }
 
 .custom-hr {
   width: 25%;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--color-white);
   margin: 20px auto;
   border-radius: 50px;
 }
@@ -250,7 +250,7 @@ h4 .bi:hover {
 
 .progress-bar {
   background-color: #0cc0df;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 /* Automatic Sosmed */
@@ -330,7 +330,7 @@ h4 .bi:hover {
 
 .timeline-title {
   font-weight: bold;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 /* HR Profile */
@@ -343,7 +343,7 @@ h4 .bi:hover {
 .hr-profile hr {
   position: absolute;
   width: calc(50% - 60px);
-  border-top: 2px solid #ffffff;
+  border-top: 2px solid var(--color-white);
   margin: 0;
 }
 
@@ -454,11 +454,10 @@ h4 .bi:hover {
 }
 
 .service-card {
-  border: rgb(12, 192, 223) solid 1px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 30px;
   text-align: center;
-  box-shadow: 0 4px 15px rgba(12, 192, 223, 0.3);
   transition: transform 0.3s ease-in-out;
   margin-bottom: 20px;
   height: 100%; /* Kunci utama: membuat card mengisi tinggi kolomnya */
@@ -521,7 +520,7 @@ h4 .bi:hover {
 .service-title {
   font-size: 35px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-white);
   opacity: 0.8;
   margin-bottom: 30px;
 }
@@ -543,7 +542,7 @@ h4 .bi:hover {
   padding: 30px;
   text-align: center;
   margin-bottom: 20px;
-  border: #0cc0df solid 2px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -560,7 +559,7 @@ h4 .bi:hover {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .skill-title {
@@ -571,7 +570,7 @@ h4 .bi:hover {
 
 .progress {
   height: 20px;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .progress-bar {
@@ -583,7 +582,7 @@ h4 .bi:hover {
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .section-title .highlight {
@@ -601,28 +600,67 @@ h4 .bi:hover {
 /*============*/
 /* Portofolio */
 /*============*/
-.hr-portofolio {
-  width: 25%;
-  border: 2px solid #000000;
-  margin: 20px auto;
-  border-radius: 50px;
+
+.filter-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #333;
+  transition: background-color 0.3s;
 }
 
-.tombol {
-  background-color: #0cc0df;
-  color: #ffffff;
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
-.tombol:hover {
-  transition: all 0.5s;
-  background-color: #000000;
-  color: #ffffff;
+.portfolio-item {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bi-portofolio {
+  color: var(--color-white);
+  float: right;
+}
+
+.card {
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Footer */
 .footer {
-  color: #ffffff;
-  background-color: #1a1a1a;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
