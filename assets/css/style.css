@@ -198,7 +198,7 @@ h4 .bi:hover {
 #about {
   margin-top: 50px;
   padding-bottom: 50px;
-  background-color: #000000;
+  background-color: var(--color-black);
 }
 
 #about .card-group {
